@@ -1,4 +1,4 @@
-Stream two files into one
+two streams into a single stream with aligned pairwise data
 
 cd & npm install
 
@@ -7,7 +7,7 @@ node app
 
 // using tuple-stream
 
-node tutpleTest
+node tupleTest
 
 
 // create file1 & file2

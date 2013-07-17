@@ -1,4 +1,4 @@
-Stream two files into one response
+Stream two files into one
 
-
-enter in dir & have to do "npm install"
+cd & npm install
+node app

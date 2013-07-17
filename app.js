@@ -16,7 +16,7 @@ var a = split();
 var b = split();
 //
 tuple(a, b).pipe(through(function (pair) {
-  var data = [pair[0], pair[1], '\n'].join('');
+  var data = [pair[0], '-', pair[1], '\n'].join('');
   this.queue(data);
 })).pipe(process.stdout);
 
@@ -33,6 +33,7 @@ file1.on('data', function (buffer) {
 // end stream
 file1.on('end', function () {
   a.end(data1);
+  //console.log(data1);
 });
 
 // File1
@@ -44,4 +45,5 @@ file2.on('data', function (buffer) {
 // end stream
 file2.on('end', function () {
   b.end(data2);
+  //console.log(data2);
 });

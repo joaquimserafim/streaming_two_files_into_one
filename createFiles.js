@@ -5,8 +5,11 @@
  * Time: 21:49
  * To change this template use File | Settings | File Templates.
  */
+/**
+ * create output to generate files to test
+ */
 (function () {
-  for (var i = 0; i < 1000000; i++) {
+  for (var i = 0; i < 100; i++) {
     var d = [];
     for (var ii = 0; ii < 4; ii++) {
       // random a number
@@ -14,6 +17,6 @@
       d.push(n);
     }
     process.stdout.write([i, '-', d.join(',')].join(''));
-    console.log();
+    process.stdout.write('\n');
   }
 })();

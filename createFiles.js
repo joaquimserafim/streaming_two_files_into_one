@@ -9,7 +9,7 @@
  * create output to generate files to test
  */
 (function () {
-  for (var i = 0; i < 100; i++) {
+  for (var i = 0; i < 100000; i++) {
     var d = [];
     for (var ii = 0; ii < 4; ii++) {
       // random a number
